@@ -25,7 +25,7 @@ ohai 'reload_nginx' do
   plugin 'nginx'
 end
 
-puts "ahaha"
+puts "#{node['ohai']}"
 
 template "#{node['ohai']['plugin_path']}/nginx.rb" do
   source 'plugins/nginx.rb.erb'
